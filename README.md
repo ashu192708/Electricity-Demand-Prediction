@@ -14,7 +14,7 @@ The system takes inputs such as:
 
 It then calculates the expected electricity demand and classifies it as **LOW, NORMAL, HIGH, or CRITICAL**.
 
-The project is developed as a basic Python implementation of **PS-1: AI-based Electricity Demand Prediction System**.
+The project is developed as a basic Python implementation of Code
 
 ---
 
