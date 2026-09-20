@@ -1,40 +1,39 @@
-# Electricity-Demand-Prediction
-AI-Based Electricity Demand Prediction System
+# Electricity Demand Prediction System
 
 ## Overview
 
-The **AI-Based Electricity Demand Prediction System** is a Python-based academic project that predicts electricity demand using basic environmental and time-related factors.
+The Electricity Demand Prediction System is a basic Python project that predicts electricity demand using simple input-based rules.
 
-The system takes inputs such as:
+The system considers factors such as:
 
 - Temperature
 - Humidity
 - Hour of the day
 - Previous electricity demand
 
-It then calculates the expected electricity demand and classifies it as **LOW, NORMAL, HIGH, or CRITICAL**.
+It then calculates the predicted electricity demand and classifies it as LOW, NORMAL, HIGH, or CRITICAL.
 
-The project is developed as a basic Python implementation of Code
+This project is implemented using basic Python concepts and does not use machine learning libraries.
 
 ---
 
 ## Problem Statement
 
-Electricity demand changes according to factors such as temperature, humidity, time of day, and previous electricity consumption.
+Electricity demand changes according to different conditions such as weather, time of day, and previous demand.
 
-The purpose of this project is to provide a simple system that can estimate electricity demand and identify periods of high or critical demand.
+The purpose of this project is to create a simple system that can estimate electricity demand based on these factors.
 
 ---
 
 ## Objectives
 
-- Predict electricity demand based on input conditions.
-- Consider temperature and humidity effects.
-- Consider different electricity-demand patterns during the day.
-- Generate high-demand and critical-demand alerts.
-- Store prediction records for future reference.
-- Provide a simple command-line interface.
-- Generate a summary of recorded electricity demand.
+- Predict electricity demand using basic Python logic.
+- Use temperature, humidity, time, and previous demand as inputs.
+- Classify electricity demand into different levels.
+- Store prediction records for future use.
+- Search prediction records by date.
+- Generate sample electricity data.
+- Display a summary of electricity demand.
 
 ---
 
@@ -52,28 +51,19 @@ The user can enter:
 
 The system calculates the predicted demand.
 
-### 2. Demand Classification
+### 2. View All Predictions
 
-The predicted demand is classified into:
+Displays all saved electricity prediction records.
 
-- LOW
-- NORMAL
-- HIGH
-- CRITICAL
+### 3. Search Prediction
 
-### 3. View All Predictions
+Allows the user to search for prediction records using a date.
 
-Displays all previously generated electricity-demand predictions.
+### 4. Generate Sample Data
 
-### 4. Search Prediction
+Automatically generates sample electricity prediction records for testing the system.
 
-Allows the user to search for a prediction using a specific date.
-
-### 5. Generate Sample Data
-
-The system can automatically generate sample electricity-demand records for testing and demonstration.
-
-### 6. Demand Summary
+### 5. Show Demand Summary
 
 Displays:
 
@@ -81,11 +71,20 @@ Displays:
 - Average demand
 - Highest demand
 - Lowest demand
-- Grid-capacity warning
+- Grid capacity warning
 
-### 7. Data Storage
+---
 
-Prediction records are stored in a JSON file so that data remains available after the program is closed.
+## Demand Levels
+
+The predicted electricity demand is classified into four levels:
+
+| Demand | Level |
+|---|---|
+| Below 4500 MW | LOW |
+| 4500–6499 MW | NORMAL |
+| 6500–7499 MW | HIGH |
+| 7500 MW or above | CRITICAL |
 
 ---
 
@@ -95,12 +94,12 @@ Prediction records are stored in a JSON file so that data remains available afte
 - JSON
 - File Handling
 - Functions
-- Lists
-- Dictionaries
 - Conditional Statements
 - Loops
+- Lists
+- Dictionaries
 - Exception Handling
-- Basic Mathematical Calculations
+- Random Number Generation
 
 No external Python libraries are required.
 
@@ -111,6 +110,5 @@ No external Python libraries are required.
 ```text
 Electricity-Demand-Prediction/
 │
-├── ashu.py
-├── README.md
-└── electricity_data.json
+├── electricity_prediction.py
+└── README.md
